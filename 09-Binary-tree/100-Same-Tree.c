@@ -11,7 +11,7 @@ struct TreeNode {
 
 bool isSameTree(struct TreeNode* p, struct TreeNode* q) {
     if (p == NULL && q == NULL){
-        return false;
+        return true;
     }
     if (p == NULL || q == NULL){
         return false;
