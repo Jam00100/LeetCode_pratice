@@ -15,10 +15,8 @@ struct TreeNode* invertTree(struct TreeNode* root) {
         return 0;
     }
 
-    // Step 1：暫存右子樹指標
     struct TreeNode* temp = root->right;
 
-    // Step 2：交換左右子樹指標
     root->right = root->left;
     root->left = temp;
 
